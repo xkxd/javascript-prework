@@ -18,6 +18,9 @@ if(randomNumber == 3){
 
 printMessage('Mój ruch to: ' + computerMove);
 
+let computerMove = `papier`
+printMessage('Zagrałem ' + computerMove + '! Jeśli Twój ruch to nożyce, to wygrywasz!');
+
 
 let playerInput = prompt('Wybierz swój ruch! 1: kamień, 2: papier, 3: nożyce.');
 
@@ -38,6 +41,3 @@ if(playerInput == '3'){
 }
 
 printMessage('Twój ruch to: ' + playerMove);
-let computerMove = `papier`;
-
-printMessage('Zagrałem ' + computerMove + '! Jeśli Twój ruch to nożyce, to wygrywasz!');
