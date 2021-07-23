@@ -49,3 +49,9 @@ if(1 < 3){
 } else if (1 > 3) {
   printMessage('Super! Wygrywasz!');
 }
+
+if( computerMove == 'papier' && playerMove == 'kamień'){
+  printMessage('Ty wygrywasz!');
+} else if (computerMove == computerMove) {
+  printMessage('Remis!');
+}
