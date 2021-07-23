@@ -1,41 +1,27 @@
-let randomNumber = Math.floor(Math.random() * 3 + 1);
+let randomFraction = Math.random();
 
-console.log('Wylosowana liczba to: ' + randomNumber);
+printMessage('Wylosowany ułamek to: ' + randomFraction);
 
-let computerMove = 'papier';
+let calculation = randomFraction * 3 + 1;
 
-if(randomNumber == 1){
-  computerMove = 'kamień';
+printMessage('Ułamek pomnożony przez 3 i powiększony o 1: ' + calculation);
+
+let roundNumber = Math.floor(calculation);
+
+printMessage('Liczba po zaokrągleniu w dół to: ' + roundNumber);
+
+if(1 < 2){
+  printMessage('Super! Papier owinął kamień');
+} else if (1 > 2) {
+  printMessage('Przegrywasz! Spróbuj jeszcze raz!');
 }
-else if (1 < 2) {
-	printMessage('Super! Papier owinął kamień!');
-}
-else if (1 < 3){
-	printMessage('Przegrywasz! Twoje nożyce się stępiły!');
+
+if(1 < 3){
+  printMessage('O nie! Nożyce się stępiły!');
+} else if (1 > 3) {
+  printMessage('Super! Wygrywasz!');
 }
 
-printMessage('Mój ruch to: ' + computerMove);
+let computerMove = `papier`;
 
-let computerMove = `papier`
 printMessage('Zagrałem ' + computerMove + '! Jeśli Twój ruch to nożyce, to wygrywasz!');
-
-
-let playerInput = prompt('Wybierz swój ruch! 1: kamień, 2: papier, 3: nożyce.');
-
-console.log('Gracz wpisał: ' + playerInput);
-
-let playerMove = 'nieznany ruch';
-
-if(playerInput == '1'){
-  playerMove = 'kamień';
-}
-
-if(playerInput == '2'){
-  playerMove = 'papier';
-}
-
-if(playerInput == '3'){
-  playerMove = 'nożyce';
-}
-
-printMessage('Twój ruch to: ' + playerMove);
